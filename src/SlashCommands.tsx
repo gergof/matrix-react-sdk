@@ -874,16 +874,17 @@ export const Commands = [
         category: CommandCategories.messages,
     }),
     new Command({
-        name: "rainbowbar",
+        command: "rainbowbar",
         description: _td("Sends the given message coloured as a rainbow"),
         args: '<message>',
         runFn: function(roomId, args) {
             if (!args) return reject(this.getUserId());
             return success(MatrixClientPeg.get().sendHtmlMessage(roomId, args, textToHtmlRainbowBar(args)));
         },
+        category: CommandCategories.messages,
     }),
     new Command({
-        name: "rainbowme",
+        command: "rainbowme",
         description: _td("Sends the given emote coloured as a rainbow"),
         args: '<message>',
         runFn: function(roomId, args) {
@@ -923,13 +924,14 @@ export const Commands = [
     }),
 
     new Command({
-        name: "rainbowbarme",
+        command: "rainbowbarme",
         description: _td("Sends the given emote coloured as a rainbow"),
         args: '<message>',
         runFn: function(roomId, args) {
             if (!args) return reject(this.getUserId());
             return success(MatrixClientPeg.get().sendHtmlEmote(roomId, args, textToHtmlRainbowBar(args)));
         },
+        category: CommandCategories.messages,
     }),
 
     // Command definitions for autocompletion ONLY:
