@@ -873,7 +873,7 @@ export const Commands = [
         },
         category: CommandCategories.messages,
     }),
-    rainbowbar: new Command({
+    new Command({
         name: "rainbowbar",
         description: _td("Sends the given message coloured as a rainbow"),
         args: '<message>',
@@ -882,7 +882,7 @@ export const Commands = [
             return success(MatrixClientPeg.get().sendHtmlMessage(roomId, args, textToHtmlRainbowBar(args)));
         },
     }),
-    rainbowme: new Command({
+    new Command({
         name: "rainbowme",
         description: _td("Sends the given emote coloured as a rainbow"),
         args: '<message>',
@@ -922,7 +922,7 @@ export const Commands = [
         category: CommandCategories.advanced,
     }),
 
-    rainbowbarme: new Command({
+    new Command({
         name: "rainbowbarme",
         description: _td("Sends the given emote coloured as a rainbow"),
         args: '<message>',
