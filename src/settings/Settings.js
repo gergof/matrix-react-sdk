@@ -124,24 +124,6 @@ export const SETTINGS = {
         supportedLevels: LEVELS_FEATURE,
         default: false,
     },
-    "feature_nsfw_ponymotes": {
-        isFeature: true,
-        displayName: _td("NSFW Ponymotes"),
-        supportedLevels: LEVELS_FEATURE,
-        default: false,
-    },
-    "feature_disable_ponymotes": {
-        isFeature: true,
-        displayName: _td("Disable Ponymotes"),
-        supportedLevels: LEVELS_FEATURE,
-        default: true,
-    },
-    "feature_disable_mutant_standard": {
-        isFeature: true,
-        displayName: _td("Disable Mutant Standard Emotes"),
-        supportedLevels: LEVELS_FEATURE,
-        default: false,
-    },
     "feature_interplanetary_time": {
         isFeature: true,
         displayName: _td("IPT Format Timestamps"),

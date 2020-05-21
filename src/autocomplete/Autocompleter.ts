@@ -30,7 +30,6 @@ import RoomProvider from './RoomProvider';
 import UserProvider from './UserProvider';
 import EmojiProvider from './EmojiProvider';
 import NotifProvider from './NotifProvider';
-import PonymoteProvider from './PonymoteProvider';
 import EmoteProvider from './EmoteProvider';
 import {timeout} from "../utils/promise";
 import AutocompleteProvider, {ICommand} from "./AutocompleteProvider";
@@ -63,7 +62,6 @@ const PROVIDERS = [
     CommunityProvider,
     DuckDuckGoProvider,
     EmoteProvider,
-    PonymoteProvider,
 ];
 
 // Providers will get rejected if they take longer than this.
